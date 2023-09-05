@@ -1,0 +1,63 @@
+:root {
+    --heading-colour: #E55812;
+    --contrast-colour: #EFE7DA;
+    --text-colour: #002626;
+    --button-colour: #95C623;
+    --button-hover: #769C1C;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #0E4749;
+    position: relative;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: var(--heading-colour)
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    top: 50%; bottom: 50%; left: 0; right: 0;
+    
+}
+
+#password-box {
+    height: 40px;
+    margin: auto;
+    top: 50%; bottom: 50px; left: 0; right: 0;
+    width: fit-content;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: var(--contrast-colour);
+    color: var(--text-colour);
+    padding: 10px 30px;
+}
+
+button {
+    font-family: 'Courier New', Courier, monospace;
+    height: 40px;
+    justify-content: center;
+    border: none;
+    background-color: var(--button-colour);
+    color: var(--contrast-colour);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px auto;
+    line-height: 20px;
+}
+
+button:hover {
+    background-color: var(--button-hover);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
