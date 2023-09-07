@@ -1,4 +1,4 @@
-:root {
+:root { /* Initialising some variables */
     --heading-colour: #E55812;
     --contrast-colour: #EFE7DA;
     --text-colour: #002626;
@@ -17,7 +17,7 @@ h1, h2, h3 {
     color: var(--heading-colour)
 }
 
-main {
+main { /* Centering the main content */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -37,6 +37,8 @@ main {
     background-color: var(--contrast-colour);
     color: var(--text-colour);
     padding: 10px 30px;
+
+    
 }
 
 button {
@@ -52,7 +54,7 @@ button {
     line-height: 20px;
 }
 
-button:hover {
+button:hover { /* Button Animation */
     background-color: var(--button-hover);
 }
 
@@ -60,4 +62,13 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+
+/* Allow box to respond to smaller screen-size */
+@media screen and (max-width: 1515px) {
+    #password-box {
+        word-break:break-all;
+        height:auto;
+    }
 }
